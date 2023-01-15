@@ -1,0 +1,213 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+
+body{
+  /*  border: solid 3px blue;*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../immagini/muraglia_cinese.jpg);
+    
+}  
+
+
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+button{
+   /* border: solid 3px red;*/
+    display: block;
+    margin:  0 auto;
+    background: blue;
+    color:white;
+    padding: 10px 35px;
+    font-size: 1.6em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+button:hover{
+    background-color: #f90606;
+    color: azure;
+    border-radius: 10px;
+}
+
+
+
+#gioco{
+   /* border: solid 4px brown;*/
+    max-width: 900px;
+    overflow: auto;
+    position: relative;
+    margin:50px auto 0;
+}
+
+/* inizio parte you */
+#gioco #you{
+    border: solid 5px #f90606;
+    width: 350px;
+    height: 390px;
+    text-align: center;
+    float:  left;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50px;
+    background-color:rgba(255,255,255,0.5);
+    color: #f90606;
+}
+
+#gioco #punteggioYou{
+    position:absolute;
+    bottom:0px;
+    height: 40px;
+    left: 3px;
+    background: #f90606;
+    color: #fefefe;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* fine parte you */
+
+
+/* inizio parte CPU */
+#gioco #cpu{
+    border: solid 5px #0633f9;
+    width: 350px;
+    height: 390px;
+    float: right;
+    color: #0633f9;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50px;
+    background-color:rgba(255,255,255,0.5);
+}
+
+#gioco #punteggioCpu{
+    position:absolute;
+    bottom: 4px;
+    right: 6px;
+    height: 40px;
+    background: #060efa;
+    color: #fbfbfb;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/*fine parte CPU */
+
+
+#gioco span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#gioco #scelta{
+  /*border:solid 3px fuchsia;*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+    display: none;
+    
+}
+
+#gioco #scelta li{
+   /* border: solid 3px gold;*/
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+    background-color: #EEE;
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+#gioco #scelta li:hover{
+    background-color: #f90606;
+    opacity: 1;
+}
+
+#gioco #scelta li:last-child{
+  /*border: solid 3px firebrick;*/
+    float: none;
+    margin: 10px auto;
+}
+
+#gioco #scelta li img{
+   /* border: solid 3px green;*/
+    width: 70%;
+    position: absolute;
+    top:15px;
+    left:20%;
+}
+
+
+
+#risultato{
+    border: solid 3px black;
+    max-width: 300px;
+    margin: 40px auto 0;
+    padding: 15px;
+    font-size:1.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color:#fff;
+}
+
+.testo{
+    color:#f90606;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+#risultato{
+    border: solid 3px black;
+    line-height: 50px;
+}
+
+#risultato .patta{
+    color:#ceb900;
+}
+
+#risultato .persa{
+    color:#e22d00;
+
+}
+
+#risultato .vinta{
+    color:#1d6600;
+}
+    
+
+ 
+    
+    
+
+
+    
+ 
+
+
+
